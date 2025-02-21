@@ -1,0 +1,533 @@
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    /* จัดโลโก้ซ้าย เมนูขวา */
+    align-items: center;
+    padding: 10px 100px;
+    height: 70px;
+
+}
+
+/* ปรับขนาดโลโก้ */
+.logo img {
+    height: 85px;
+}
+
+/* สไตล์ของเมนู */
+/* สไตล์ของเมนู */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    /* ลดช่องว่างระหว่างเมนู */
+    padding: 0;
+}
+
+/* ปรับขนาดปุ่มเมนูให้เท่ากัน */
+.menu li {
+    flex: 1;
+    /* กระจายพื้นที่เท่ากัน */
+    display: flex;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 0;
+    /* กำหนด padding บน-ล่าง */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    /* กำหนดความกว้างเท่ากัน */
+    height: 30px;
+    /* กำหนดความสูงเท่ากัน */
+    transition: 0.3s;
+    text-align: center;
+}
+
+/* ปุ่ม "หน้าหลัก" ให้เป็นสีขาว */
+/*.menu li:nth-child(2) a {
+    background-color: white;
+    color: black;
+}*/
+
+/*เปลี่ยนสีปุ่มตามหน้า*/
+.menu li a {
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.menu li a.active {
+    background-color: white;
+    color: black;
+}
+
+/*end*/
+
+
+/* ทำเอฟเฟกต์ Hover */
+.menu li a:hover {
+    background-color: gray;
+    color: white;
+}
+
+
+
+/* ตรงแถวเมนู */
+
+
+
+.bottom-section {
+    background-color: white;
+    padding: 50px 100px;
+    text-align: center;
+    margin: 0;
+    /* ป้องกันระยะห่าง */
+}
+
+.bottom-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.menu-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    max-width: 900px;
+    /* ป้องกันการยืดเกินไป */
+    margin: 0 auto;
+    /* จัดให้อยู่ตรงกลาง */
+}
+
+
+.menu-item {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/*ข้างล่างเมนู*/
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ccc;
+    /* สีเทาอ่อน */
+    padding: 50px 100px;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.text-content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+
+}
+
+.image-content {
+    flex: 1;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 500px;
+    /* จำกัดขนาดสูงสุด */
+    display: block;
+}
+
+
+/*เมนูยอดฮิต*/
+.bottom-section {
+    background-color: white;
+    padding: 50px 100px;
+    text-align: center;
+}
+
+.bottom-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/*
+.menu-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+*/
+
+.menu-item {
+    width: 250px;
+    /* ปรับขนาดคอนเทนเนอร์ */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    width: 250px;
+    /* กำหนดความกว้างของภาพ */
+    height: auto;
+    /* ให้สูงของภาพปรับอัตโนมัติเพื่อรักษาสัดส่วน */
+    border-radius: 10px;
+}
+
+.menu-item p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+
+
+.details-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    min-height: 100vh;
+    /* ให้สูงเต็มหน้าจอ */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    /* background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+/* กรอบดำที่รวมตัวเลือกทั้งหมด */
+.all-options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #010101;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* ตั้งค่าให้ทุกตัวเลือกเรียงกันในกรอบเดียว */
+.noodle-options,
+.spicy-options,
+.fermented-options,
+.topping-options,
+.pachana-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+/* ปรับสไตล์ให้ปุ่มดูสวยขึ้น */
+.noodle-options label,
+.spicy-options label,
+.fermented-options label,
+.topping-options label,
+.pachana-options label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.noodle-options label:hover,
+.spicy-options label:hover,
+.fermented-options label:hover,
+.topping-options label:hover,
+.pachana-options label:hover {
+    transform: scale(1.1);
+}
+
+/* สไตล์ของรูป */
+.noodle-options img,
+.spicy-options img,
+.fermented-options img,
+.topping-options img,
+.pachana-options img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+    border: 2px solid white;
+    transition: border 0.3s;
+}
+
+/* สไตล์ปุ่มกด */
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+/* แสดงกรอบแดงเมื่อถูกเลือก */
+input[type="radio"]:checked+img,
+input[type="checkbox"]:checked+img {
+    border-color: #d9534f;
+}
+
+
+/* ปุ่มล้่าวง */
+.button-container-option {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.cancel-btn,
+.confirm-btn {
+    padding: 100px 100px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* ปุ่มยกเลิก (ซ้าย) */
+.cancel-btn {
+    display: inline-block;
+    background-color: rgb(78, 4, 4);
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.cancel-btn:hover {
+    background-color: #c82333;
+}
+
+/* ปุ่มยืนยัน (ขวา) */
+.confirm-btn {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.confirm-btn:hover {
+    background-color: #888621;
+}
+
+.cart-container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #222;
+    color: #f8f8f8;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/*หน้าตาราง cart*/
+th,
+td {
+    padding: 10px;
+    border: 1px solid #555;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+a:hover {
+    color: darkred;
+}
+
+.clear-cart {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
+.clear-cart:hover {
+    background-color: darkred;
+}
+
+/* วิธีการชำระ */
+.container-pay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.button-pay-qr {
+    background-color: #4CAF50;
+    /* สีเขียว */
+    color: white;
+}
+
+.button-pay-money {
+    background-color: #FF9800;
+    /* สีส้ม */
+    color: white;
+}
+
+.button-pay-money,
+.button-pay-qr {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    margin: 20px;
+    border: 2px solid #010101;
+    /* แก้ไข border ให้แสดงผล */
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    /* เพิ่มเงา */
+    transition: 0.3s ease-in-out;
+}
+
+.button-pay-money:hover,
+.button-pay-qr:hover {
+    transform: scale(1.05);
+    /* ขยายปุ่มเล็กน้อยเมื่อ hover */
+    opacity: 0.9;
+}
+
+/* หน้าจ่ายเงิน */
+body1 {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.container-pay-money,
+.container-pay-mone {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.confirm-btn-pay {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 170px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.confirm-btn-pay:hover {
+    background-color: #218838;
+}
+
+.cancel-btn-pay {
+    display: inline-block;
+    background-color: #dc3545;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.cancel-btn-pay:hover {
+    background-color: #c82333;
+}
