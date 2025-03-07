@@ -14,7 +14,7 @@
 ---
 
 ## 🛠 เทคโนโลยีที่ใช้  
-💻 **Frontend:** HTML, CSS  
+💻 **Frontend:** HTML, CSS , Javascript
 🖥 **Backend:** PHP  
 🗄 **Database:** MySQL  
 
